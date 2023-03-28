@@ -5,6 +5,7 @@ let num2 = "";
 let num2Before = "";
 let bool = true;
 let symbol = "";
+Calculator();
 
 function Calculator() {
     for (const b of buttons) {
@@ -16,7 +17,7 @@ function Calculator() {
 }
 
 
-function calc(num1, num2, symbol) {
+function calc() {
     num1 = Number(num1);
     num2 = Number(num2);
     if (symbol === "+") {
@@ -50,12 +51,12 @@ function getValue(b) {
         document.getElementById("input").value = calc(num1, num2, symbol);
         clear();
     } else {
-        printOnScreen(bool, value);
+        printOnScreen(bool, value, b);
     }
 }
 
 
-function printOnScreen(bool, value) {
+function printOnScreen(bool, value, b) {
     if (bool) {
         if (value === 'b') {
             num1 = num1Before;
