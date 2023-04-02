@@ -1,8 +1,24 @@
 
 body {
-    background: aqua;
+    background-color: gray;
+    width: 500px;
+    text-align: center;
+    margin: 4% auto;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
 }
-div {
-    text-align:center;
-    font-size: 30px;
+#input {
+    height: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    margin-right: 6px;
+    font-size:1.8rem;
+    border-radius: 50px;
 }
+button {
+    border-radius: 50px;
+    height: 20px;
+    padding: 17px;
+    box-shadow: none;
+}
+
